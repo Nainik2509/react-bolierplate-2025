@@ -1,12 +1,13 @@
 module.exports = {
   semi: true,
-  trailingComma: "all",
+  trailingComma: 'all',
   singleQuote: true,
   jsxSingleQuote: false,
   tabWidth: 2,
   printWidth: 80,
   bracketSpacing: true,
-  endOfLine: "crlf",
+  endOfLine: 'crlf',
   useTabs: false,
-  arrowParens: "always",
+  arrowParens: 'always',
 };
+
