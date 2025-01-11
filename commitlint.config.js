@@ -33,6 +33,7 @@ export default {
       'always',
       [
         'components', // Changes to reusable components
+        'module', // Changes to reusable components
         'hooks', // Changes to custom React hooks
         'state', // State management (e.g., Redux, Context API)
         'routing', // Changes to routing/navigation logic
