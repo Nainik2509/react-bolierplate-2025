@@ -29,7 +29,18 @@
     "type": "git",
     "url": "git+https://github.com/Nainik2509/react-bolierplate-2025.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ReactJs",
+    "Webpack",
+    "Eslint",
+    "Prettier",
+    "Git",
+    "Boilerplate",
+    "Babel",
+    "Husky",
+    "Lint Staged",
+    "Nainik2509"
+  ],
   "author": "Nainik Mehta",
   "license": "ISC",
   "bugs": {
@@ -50,6 +61,11 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "engines": {
+    "node": ">=v22.12.0",
+    "yarn": ">=1.22.22",
+    "npm": "Npm can't be used. It is better to use yarn."
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -91,3 +107,4 @@
   },
   "sideEffects": false
 }
+
