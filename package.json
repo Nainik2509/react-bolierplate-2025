@@ -2,6 +2,7 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Start React+Redux project with Javascript in an easier and faster way",
   "main": "index.js",
   "scripts": {
