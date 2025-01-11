@@ -45,9 +45,9 @@ export default [
   ...compat.extends(
     'eslint:recommended',
     'plugin:react/recommended',
-    'prettier',
     'airbnb',
     'airbnb/hooks',
+    'prettier',
     'plugin:prettier/recommended',
   ),
   {
@@ -66,9 +66,26 @@ export default [
     },
 
     rules: {
-      'prettier/prettier': 'error',
       'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+      'import/no-extraneous-dependencies': ['off'],
+      'no-underscore-dangle': 'off',
+      'import/order': [
+        'error',
+        {
+          groups: [
+            ['builtin', 'external'], // NodeJs || ReactJS built-in modules OR External modules (external to the project)
+            'internal', // Internal modules (inside the project)
+            'parent', // Parent directories' modules (outside the project)
+            'sibling', // Sibling modules (inside the same or nested directories)
+            'index', // Index file in the current directory
+          ],
+          'newlines-between': 'always',
+          alphabetize: {
+            order: 'asc',
+            caseInsensitive: true,
+          },
+        },
+      ],
     },
   },
 ];
-
