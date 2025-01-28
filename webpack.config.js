@@ -1,15 +1,15 @@
-const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const metaConfig = require('./meta.config.js');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
+const metaConfig = require('./meta.config');
 
 module.exports = (env, options) => {
-  const devMode = options.mode === 'development' ? true : false;
+  const devMode = options.mode === 'development';
 
   process.env.NODE_ENV = options.mode;
 
@@ -149,4 +149,3 @@ module.exports = (env, options) => {
     },
   };
 };
-

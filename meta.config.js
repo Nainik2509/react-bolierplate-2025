@@ -1,8 +1,8 @@
-const package = require('./package.json');
+const packageDetail = require('./package.json');
 
-const title = '' || package.name;
-const description = `` || package.description;
-const homepage = '' || package.homepage;
+const title = packageDetail?.name || '';
+const description = packageDetail?.description || ``;
+const homepage = packageDetail?.homepage || '';
 const thumbnail = `${homepage}/public/thumbnail.jpg`;
 
 module.exports = {
@@ -33,4 +33,3 @@ module.exports = {
     robots: 'index, follow',
   },
 };
-
